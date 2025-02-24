@@ -4,20 +4,29 @@ body {
     text-align: center;
     color: white;
 }
+
+.dark-mode {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+
 .container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background:  #6aa66d;
+    background: #6aa66d;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     color: black;
 }
+
 h1 {
     color: black;
     font-weight: bold;
 }
-#taskInput {
+
+#taskInput,
+#taskDate {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -25,7 +34,9 @@ h1 {
     border-radius: 5px;
     outline: none;
 }
-#addTask {
+
+#addTask,
+#toggleDarkMode {
     padding: 10px 15px;
     color: black;
     border: none;
@@ -34,14 +45,18 @@ h1 {
     transition: 0.3s;
     font-weight: bold;
 }
-#addTask:hover {
+
+#addTask:hover,
+#toggleDarkMode:hover {
     background: black;
-    color:  #4a9c4e;;
+    color: #4a9c4e;
 }
+
 #taskList {
     list-style: none;
     padding: 0;
 }
+
 .task-item {
     background: #eee;
     padding: 10px;
@@ -52,7 +67,9 @@ h1 {
     border-radius: 5px;
     font-weight: bold;
 }
-.delete-task {
+
+.delete-task,
+.edit-task {
     background: red;
     color: white;
     border: none;
@@ -61,9 +78,16 @@ h1 {
     border-radius: 5px;
     transition: 0.3s;
 }
+
+.edit-task {
+    background: orange;
+    margin-right: 5px;
+}
+
 .delete-task:hover {
     background: black;
 }
-.task-item:hover{
-    cursor: pointer;
+
+.edit-task:hover {
+    background: black;
 }

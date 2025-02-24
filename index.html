@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,19 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <div class="container">
         <h1>Day Planner Website</h1>
         <input type="text" id="taskInput" placeholder="Add a task">
+        <input type="datetime-local" id="taskDate">
         <button id="addTask">Add Task</button>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <p><strong>Total Tasks:</strong> <span id="totalTasks">0</span> | <strong>Completed:</strong> <span
+                id="completedTasks">0</span></p>
         <ul id="taskList"></ul>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
