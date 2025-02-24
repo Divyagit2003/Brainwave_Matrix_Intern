@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, white, #c4c8ce);
+    text-align: center;
+    color: white;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background:  #6aa66d;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: black;
+}
+h1 {
+    color: black;
+    font-weight: bold;
+}
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0d0c12;
+    border-radius: 5px;
+    outline: none;
+}
+#addTask {
+    padding: 10px 15px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+#addTask:hover {
+    background: black;
+    color:  #4a9c4e;;
+}
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+.task-item {
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.delete-task {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.delete-task:hover {
+    background: black;
+}
+.task-item:hover{
+    cursor: pointer;
+}
